@@ -1,0 +1,11 @@
+#root{
+  margin: 0;
+  padding: 0;
+}
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
