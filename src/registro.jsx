@@ -6,11 +6,11 @@ const Registro = () => {
         <section className="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
         <div className="container">
             <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+            <div className="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
                 <div className="d-flex justify-content-center py-4">
                 <a href="#" className="logo d-flex align-items-center w-auto">
-                   <span className="d-none d-lg-block">RECOLECCIÓN DE ENVÍOS</span>
+                   <span className="d-lg-block">GESTIÓN DE RECOLECCIÓN DE ENVÍOS</span>
                 </a>
                 </div>{/*<!-- End Logo -->*/}
 
