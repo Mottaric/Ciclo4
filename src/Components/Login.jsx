@@ -1,93 +1,80 @@
-import { useState } from "react"
+const Login = () => {
+    return(
+    <div className="container">
 
-const Login =({validateLogin,setvalidateLogin})=>{
-    const [isLogin,setIsLogin]= useState(true);
-    const handleSubmit =(event)=>{
-        event.preventDefault()
-        if(isLogin){
-            //TODO inicio de sesión
-            alert("Se inicia sesion")
-
-            //setvalidateLogin(true)
-        }else{
-            //TODO registro  de usuario
+     <section className="section register min-vh-200 d-flex flex-column align-items-center justify-content-center py-4">
+        
+        <div className="container">
             
-            //setvalidateLogin(true)
-        }
-    }
+            <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
-    return <div style={{display: validateLogin ? 'none':'' }}>
-      
-       <form onSubmit={handleSubmit} >
-            {
-                isLogin ? 
-                <div   className="formulario">
-                <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="#">Message</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    
+                <div className="d-flex justify-content-center py-4">
+                <a href="/" className="logo d-flex align-items-center w-auto">
+                    {/*<!-- <img src="assets/img/logo.png" alt=""/>-->*/}
+                    <span className="d-lg-block">GESTIÓN DE RECOLECCION DE ENVIOS</span>
+                </a>
+                </div>{/*<!-- End Logo -->*/}
+
+                <div className="card mb-3">
+
+                <div className="card-body">
+
+                    <div className="pt-4 pb-2">
+                    <h5 className="card-title text-center pb-0 fs-4">INGRESO</h5>
+                    <p className="text-center small">Ingrese su documento y contraseña</p>
+                    </div>
+
+                    <form action="/listaenvios" className="row g-3 needs-validation" noValidate>
+
+                    <div className="col-12">
+                        <label for="yourUsername" className="form-label">Documento de identidad</label>
+                        <div className="input-group has-validation">
+                        {/*<!--<span className="input-group-text" id="inputGroupPrepend">@</span>-->*/}
+                        <input type="text" name="username" className="form-control" id="yourUsername" required />
+                        <div className="invalid-feedback">Ingrese su usuario.</div>
+                        </div>
+                    </div>
+
+                    <div className="col-12">
+                        <label for="yourPassword" className="form-label">Contraseña</label>
+                        <input type="password" name="password" className="form-control" id="yourPassword" required />
+                        <div className="invalid-feedback">Ingerse su contraseña</div>
+                    </div>
+
+                    <div className="col-12">
+                        <div className="form-check">
+                        <input className="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe" />
+                        <label className="form-check-label" for="rememberMe">Mantener sesión activa</label>
+                        </div>
+                    </div>
+                    <div className="col-12">
+                        <button className="btn btn-primary w-100" type="submit">INGERSO</button>
+                    </div>
+                    <div className="col-12">
+                        <p className="small mb-0">No tienes cuenta?</p> 
+                        <p><a href="/registro">Crea una cuenta acá</a></p>
+                    </div>
+                    </form>
+
                 </div>
                 </div>
-            </div>
-            </nav>
-                <br></br>
 
-                <h2>Login</h2>
-                <div className="mb-3">
-                <label for="exampleInputEmail1" className="form-label">Email address</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-            <label for="exampleInputPassword1" className="form-label">Password</label>
-            <input type="password" className="form-control" id="exampleInputPassword1"/>
-            <div className="mb-3 form-check">
-            </div>
-                <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                <label className="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
-                <p/><button onClick={()=>setIsLogin(!isLogin)} href="#">Register</button>
-            </div> 
-            :
-            <div  className="formulario">
-            <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-            </div>
+                <div className="credits">
+                {/*<!-- All the links in the footer should remain intact. -->*/}
+                {/*<!-- You can delete the links only if you purchased the pro version. -->*/}
+                {/*<!-- Licensing information: https://bootstrapmade.com/license/ -->*/}
+                {/*<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->*/}
+                {/*Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>*/}
+                </div>
 
-            <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Create password</label>
-            <input type="password" className="form-control" id="exampleInputPassword1" />
             </div>
-            
-            <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Recuperacion</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-                <p/><button style={{position:"absolute", top: "10%", left:"20%"}}  onClick={()=>setIsLogin(!isLogin)} href="#">Regresar</button>
-                
-                <input type="submit" value="Registrar"/>
-            </div>
-            
-            }
-        </form> 
+        </div>
 
-        <form>
-  
-</form>
-
-
+     </section>
     </div>
+    )
 }
 
-
-export default Login
-
-
+export default Login;

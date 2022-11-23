@@ -3,10 +3,10 @@ import React from 'react'
 //import reactLogo from './assets/react.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './login';
-import Registro from './registro';
-import ListaEnvios from './listaEnvios';
-import NuevoEnvio from './nuevoEnvio';
+import Login from './Components/login';
+import Registro from './Components/registro';
+import ListaEnvios from './Components/listaEnvios';
+import NuevoEnvio from './Components/nuevoEnvio';
 
 function App() {
   // const [count, setCount] = useState(0)
