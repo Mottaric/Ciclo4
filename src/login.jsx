@@ -25,7 +25,7 @@ const Login = () => {
                     <p className="text-center small">Ingrese su documento y contraseña</p>
                     </div>
 
-                    <form className="row g-3 needs-validation" noValidate>
+                    <form action="/listaenvios" className="row g-3 needs-validation" noValidate>
 
                     <div className="col-12">
                         <label for="yourUsername" className="form-label">Documento de identidad</label>

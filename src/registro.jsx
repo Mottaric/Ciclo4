@@ -23,7 +23,7 @@ const Registro = () => {
                     {/*<!--<p className="text-center small">Ingresa tus datos personales</p>-->*/}
                     </div>
 
-                    <form className="row g-3 needs-validation" noValidate>
+                    <form action="/login" className="row g-3 needs-validation" noValidate>
                     <div className="col-12">
                         <label for="yourName" className="form-label">Nombre</label>
                         <input type="text" name="name" className="form-control" id="yourName" required/>
