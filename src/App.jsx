@@ -7,13 +7,16 @@ import Login from './Components/login';
 import Registro from './Components/registro';
 import ListaEnvios from './Components/listaEnvios';
 import NuevoEnvio from './Components/nuevoEnvio';
+import Header from './Components/header';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
+      <Header />
         <Routes>
+          
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Registro />} />
