@@ -3,7 +3,7 @@ export function FormListaEnvios(){
         
     <main id="main" className="main">
   <section className="section dashboard">
-    <div className="col-lg-9">
+    <div className="col-lg-11">
 
       <div className="card">
         <div className="card-body">
