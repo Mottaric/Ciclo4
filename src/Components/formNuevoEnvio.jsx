@@ -1,7 +1,9 @@
 export function FormNuevoEnvio(){
     return (
         <>
-            <div className="col-sm-9">
+        <main id="main" className="main">
+            <section className="section dashboard">
+                <div className="col-sm-9">
 
                         <div className="card">
                             <div className="card-body">
@@ -29,7 +31,7 @@ export function FormNuevoEnvio(){
                                     </div>
                                 </div>
                                 <div className="row g-3 mb-3">
-                                    <div className="col-md-3">
+                                    <div className="col-md-2">
                                         <label className="form-label">Peso Aprox:</label>
                                         <input type="text" className="form-control" id=""  />
                                     </div>
@@ -104,7 +106,9 @@ export function FormNuevoEnvio(){
 
                             </div>
                         </div>
-            </div>
+                </div>
+            </section>
+        </main>
         </>
         )
 }
