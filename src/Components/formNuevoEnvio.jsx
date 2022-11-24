@@ -47,7 +47,7 @@ export function FormNuevoEnvio(){
                                             <input type="text" className="form-control" id="" aria-describedby="inputGroupPrepend2" />
                                         </div>
                                     </div>
-                                    <div class="form-check col-md-2">
+                                    <div className="form-check col-md-2">
                                     <div className="form-check">
                                         <label className="form-check-label" for="gridCheck1">
                                         ¿Es delicado?
@@ -57,7 +57,7 @@ export function FormNuevoEnvio(){
                                 </div>
                                 </div>
                                 
-                                <p><spam>Datos del destinatario</spam></p>
+                                <p><span>Datos del destinatario</span></p>
 
                                 <div className="row mb-3">
                                     <label for="inputText" className="col-sm-5 col-form-label">Nombre:</label>
